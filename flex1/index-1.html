@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Layout 1</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-weight: bold;
+      font-family: Sans-Serif;
+      outline: 1px solid grey;
+    }
+
+    .container {
+      display: flex;
+      background-color: #eee;
+      /*flex-wrap:wrap;*/
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .main {
+      display: flex;
+      flex: 3;
+    }
+
+    .header {
+      /*         flex-basis: 100%;*/
+      background-color: rgb(144, 169, 238);
+      flex: 1;
+    }
+
+    .article {
+      /*  flex-basis:70%;*/
+      background-color: lightgrey;
+      flex: 4;
+    }
+
+    .aside {
+      /* flex-basis:15%;*/
+      background-color: #eee;
+      flex: 1;
+    }
+
+    .nav {
+      /*   flex-basis:15%;*/
+      background-color: rgb(254, 224, 255);
+      flex: 1;
+    }
+
+    .footer {
+      /* flex-basis:100%;*/
+      background-color: rgb(144, 174, 238);
+      flex: 1;
+    }
+
+    .article,
+    .aside,
+    .nav,
+    .footer,
+    .header {
+      padding: 1rem;
+    }
+
+    /* End TG */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item header">
+      header
+    </div>
+    <div class="main">
+      <div class="item article">
+        article
+      </div>
+      <div class="item aside">
+        aside
+      </div>
+      <div class="item nav">
+        Nav
+      </div>
+    </div>
+    <div class="item footer">
+      footer
+    </div>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>
