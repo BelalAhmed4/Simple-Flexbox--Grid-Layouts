@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box 6</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #474747;
+    font-weight: bold;
+  }
+
+  div {
+    padding: 5px;
+    border-radius: 0.3rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parent {
+    padding: 5px;
+    background-color: #474747;
+    width: 100vw;
+    height: 100vh;
+    gap: calc(5vh / 2);
+
+  }
+
+  .left {
+    background-color: #23eb9e;
+    flex-basis: 50%;
+  }
+
+  .right {
+    flex-basis: 50%;
+    gap: calc(5vh / 2);
+  }
+
+  .upperRow {
+    background-color: #23eb9e;
+    flex-basis: 30%;
+  }
+
+  .secondParent {
+
+    gap: calc(5vh / 2);
+  }
+
+  .twoBoxes {
+    gap: calc(5vh / 2);
+  }
+
+  .box {
+    background-color: #23eb9e;
+    flex-basis: 100%;
+    height: 30vh;
+  }
+
+  .lowerRow {
+    background-color: #23eb9e;
+    height: 30vh;
+  }
+</style>
+
+<body>
+  <section class="parent flex">
+    <div class="left">
+      <h2>Flex Box</h2>
+    </div>
+    <div class="right flex-column">
+      <div class="upperRow">upperRow</div>
+      <div class="secondParent flex-column">
+        <div class="twoBoxes flex">
+          <div class="box one">One</div>
+          <div class="box two">Two</div>
+        </div>
+        <div class="lowerRow">Lower Row</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

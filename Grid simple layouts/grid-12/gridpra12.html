@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid layout</title>
+    <style>
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing:border-box;
+        font-weight:900;
+        font-size: 16px;
+    font-family: Sans-Serif;
+    }
+    body{
+        display: grid;
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-rows: 87px 1fr;
+      height:100vh;
+    }
+    .item{
+        padding:11px;
+    }
+    aside{
+        background-color: #adb5bd;
+        grid-column:1;
+        grid-row: 1/span 2;
+    }
+    nav{
+      position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: start;
+        gap:8px;
+        background-color: #dbe4ff;
+        grid-column:2/span 3;
+        text-align: center;
+    }
+    nav .child{
+     background-color: #5c7cfa;
+        padding:2px;
+        border-radius: 10%;
+        border:solid #444 1px;
+    }
+    nav div:last-child{
+       position:absolute;
+        right:5px;
+        background-color:#e64980;
+        
+    }
+    menu{
+        display:flex;
+        flex-direction: column;
+        gap:34px;
+        align-items: center;
+         background-color:#bac8ff;
+         grid-column:2;
+         grid-row:2/span 1;
+         text-align: center;
+         overflow: scroll;
+    }
+    menu .box{
+        shrink:1;
+        padding:2rem;
+      border-radius:15%;
+        background-color:#868e96;
+        
+    }
+    section{
+        background-color:#edf2ff;
+        grid-column: 3;
+        grid-row:2/span 1;
+    }
+    div{
+       background-color: #5c7cfa;
+       grid-column: 4;
+       grid-row: 2/span 1;
+    }
+    </style>
+</head>
+<body class="container">
+    <aside class="item">Aside</aside>
+    <nav class="item">
+        <div class="child">Home</div>
+        <div class="child">Contact</div>
+        <div class="child">Service</div>
+        <div class="child">Trash</div>
+    </nav>
+    <menu class="item">
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+        <div class="box">Menu</div>
+    </menu>
+    <section class="item">Email</section>
+    <div class="item">Additional part</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            font-family: Sans-Serif;
+            font-size: 20px;
+        }
+        .container {
+            background-color: #2D2F43;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 70%;
+            height: 500px;
+
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: repeat(3, 1fr );
+            grid-template-areas:"head head head "
+            "side center center"
+            "side end-1 end-2 ";
+            gap: 10px 10px;
+            outline: 5px solid black;
+            /* justify-items: center; */
+
+        }
+        .item {}
+        .one {
+            padding: 1rem;
+            background-color: #00A885;
+            grid-area:head;
+        }
+        .two {
+            padding: 1rem;
+            background-color: #1AC1A3;
+            grid-area:side;
+        }
+        .three {
+            padding: 1rem;
+            background-color: lightgreen;
+           grid-area:center;
+        }
+        .four {
+            padding: 1rem;
+            background-color: grey;
+            grid-area:end-1;
+        }
+        .five {
+            padding: 1rem;
+            background-color: #dde;
+         grid-area:end-2;
+        }
+       /*  .six {
+           padding: 1rem;
+           background-color: #ddb;
+           grid-column:span 1;
+       }
+        .seven{
+           padding: 1rem;
+           background-color: #ddc;
+          grid-column:span 1;
+       }
+        .eight {
+           padding: 1rem;
+           background-color: #ddd;
+          grid-column:span 3;
+       }
+        .nine{
+           padding: 1rem;
+           background-color: #dd7;
+           grid-column:span 5;
+       } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one item">
+            one
+        </div>
+        <div class="two item">
+            two
+        </div>
+        <div class="three item">
+            three
+        </div>
+            <div class="four item">
+                four
+            </div>
+            <div class="five item">
+                five
+            </div>
+          <!--   <div class="six item">
+              six
+          </div>
+           <div class="seven item">
+              four
+          </div>
+          <div class="eight item">
+              five
+          </div>
+          <div class="nine item">
+              six
+          </div> -->
+        
+
+
+    </div>
+</body>
+</html>

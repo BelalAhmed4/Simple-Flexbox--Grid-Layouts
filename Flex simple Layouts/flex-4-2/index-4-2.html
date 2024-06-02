@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            /* border: 1px dotted black; */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Sans-Serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+        }
+
+        nav {
+            height: 100vh;
+            flex-basis: 15vw;
+            background-color: lightblue;
+            padding: 1rem;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 85vw;
+            height: 100vh;
+        }
+
+        header {
+            width: 85vw;
+            flex-basis: 15vh;
+            background-color: grey;
+            padding: 1rem;
+        }
+
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 85vh;
+            width: 85vw;
+        }
+
+        .inner-col {
+            flex-basis: 70vw;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            flex-basis: 70vh;
+            width: 70vw;
+            background-color: #177;
+            padding: 1rem;
+        }
+
+        footer {
+            flex-basis: 15vh;
+            width: 70vw;
+            background-color: #474747;
+            padding: 1rem;
+        }
+
+        aside {
+            flex-basis: 15vw;
+            height: 85vh;
+            background-color: #d35;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            nav
+        </nav>
+        <div class="right-col">
+            <header>
+                header
+            </header>
+            <div class="inner-row">
+                <div class="inner-col">
+                    <article>
+                        article
+                    </article>
+                    <footer>
+                        footer
+                    </footer>
+                </div>
+                <aside>
+                    aside
+                </aside>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Layout 3</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      outline: 2px solid lightblue;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav {
+      background-color: grey;
+      flex: 1;
+      width: 20vw;
+      padding: 1rem;
+    }
+
+    .header {
+      background-color: #dfd;
+      flex: 1;
+      width: 80vw;
+      padding: 1rem;
+    }
+
+    .article {
+      background-color: rgb(207, 123, 123);
+      flex: 5;
+      width: 80vw;
+      padding: 1rem;
+    }
+
+    .footer {
+      background-color: lightgreen;
+      flex: 1;
+      width: 80vw;
+      padding: 1rem;
+    }
+
+    /* End TG */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav">
+      nav
+    </div>
+
+    <div class="column">
+      <div class="header ">
+        header
+      </div>
+      <div class="article ">
+        article
+      </div>
+      <div class="footer ">
+        footer
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

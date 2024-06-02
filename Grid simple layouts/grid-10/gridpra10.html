@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            pdding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            width: 70%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+        }
+        .inner-flx {
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            grid-column: 2;
+        }
+        .three {
+            flex: 2;
+            background-color: #474747;
+        }
+        .two {
+            background-color: #d35;
+            flex: 1;
+        }
+        .one {
+            grid-column: 1;
+            background-color: #788;
+        }
+        .it {
+            padding: 1rem;
+            /* background-color:#ddd; */
+        }
+        .four {
+            grid-column: 3;
+            background-color: #788;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="one it">
+            one
+        </div>
+        <div class="inner-flx">
+            <div class="two it">
+                two
+            </div>
+            <div class="three it">
+                three
+            </div>
+        </div>
+        <div class="four it">
+            four
+        </div>
+    </div>
+</body>
+</html>

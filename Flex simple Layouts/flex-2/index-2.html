@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Layout 2</title>
+  <style>
+    * {
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Sans-Serif;
+      box-sizing: border-box;
+      outline: 1px solid #333;
+    }
+
+    .container {
+      flex-direction: row;
+      display: flex;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .nav {
+      background-color: rgb(170, 219, 219);
+      flex-basis: 15vw;
+      padding: 1rem;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .header {
+      padding: 1rem;
+      background-color: rgb(243, 243, 191);
+      flex-basis: 10vh;
+      /* order:1; */
+    }
+
+    .footer {
+      flex-basis: 10vh;
+      background-color: rgb(115, 209, 138);
+      padding: 1rem;
+      /* order:5; */
+    }
+
+    .article {
+      flex: 2;
+      padding: 1rem;
+      background-color: grey;
+    }
+
+    .aside {
+      padding: 1rem;
+      flex: 1;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav">
+      nav
+    </div>
+
+    <div class="main">
+      <div class="header">
+        header
+      </div>
+
+      <div class="row">
+
+        <div class="article">
+          article
+        </div>
+        <div class="aside">
+          aside
+        </div>
+
+        <!-- end row-->
+      </div>
+
+
+      <div class="footer">
+        footer
+      </div>
+
+      <!-- end main-->
+    </div>
+
+
+  </div>
+</body>
+
+</html>
